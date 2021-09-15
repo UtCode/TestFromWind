@@ -11,8 +11,6 @@ pipeline {
             steps {
                 echo 'Feching..'
 				git 'https://github.com/UtCode/Microservice-Projects.git'
-				dir(currency-conversion-service){
-					echo 'inside dir..'
 					sh 'pwd'
 				}
             }
