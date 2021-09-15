@@ -11,8 +11,9 @@ pipeline {
             steps {
                 echo 'Feching..'
 				bat "mkdir server"
-				bat "cd server"
-				git 'https://github.com/UtCode/Microservice-Projects.git'	
+				dir(server){
+					git 'https://github.com/UtCode/Microservice-Projects.git'
+				}					
             }
         }
     }
