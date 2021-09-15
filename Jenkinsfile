@@ -10,7 +10,7 @@ pipeline {
 		stage('Repo fetch') {
             steps {
                 echo 'Feching..'
-				dir(server){
+				dir("server"){
 					git 'https://github.com/UtCode/Microservice-Projects.git'
 				}					
             }
