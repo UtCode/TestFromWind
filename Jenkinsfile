@@ -11,8 +11,7 @@ pipeline {
             steps {
                 echo 'Feching..'
 				git 'https://github.com/UtCode/Microservice-Projects.git'
-					sh 'pwd'
-				}
+				sh 'pwd'
             }
         }
     }
